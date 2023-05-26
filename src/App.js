@@ -19,10 +19,11 @@ function App() {
                 <Header/>
                 <div className={"top-24 absolute left-0 right-0 px-5"}>
                     <hr/>
+                    &nbsp;
                     <Banner/>
                     <Divider/>
                     <Filters/>
-                    <div className={"items-start justify-start absolute"}>
+                    <div className={"items-start justify-start"}>
                         <Heading>304 Tutors Available</Heading>
                         <div className={"flex flex-row flex-wrap"}>
                             {Cards}

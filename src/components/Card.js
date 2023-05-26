@@ -7,12 +7,12 @@ const LectureCard = () => {
         <div className={"shadow-md w-auto md:w-[450px] my-5 mx-auto rounded-sm p-2"}>
             <HStack>
                 <div className={"bg-green-400 rounded-md h-100 w-4/12 teacher-cover"}></div>
-                <div className={"ml-3 w-6/12 space-y-1 flex flex-col justify-start items-start"}>
+                <div className={"ml-3 w-8/12 space-y-1 flex flex-col justify-start items-start"}>
                     <IonIcon icon={bookmark} className={"text-gray-400 right-0 absolute text-xl"}/>
                     <div>
                         <Heading>Leslie A. Peters</Heading>
                         <h4>Bsc Economics (Bachelors)</h4>
-                        <p className={"text-sm text-gray-600"}>
+                        <p className={"text-xs md:text-sm text-gray-600"}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem debitis dolores
                             eligendi
                             eveniet

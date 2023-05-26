@@ -16,7 +16,7 @@ const CreateLectureButton = () => {
         <button
             className={"bg-blue-500 px-2 flex flex-row justify-center align-middle items-center rounded-md h-8 text-white"}>
             <IonIcon icon={addSharp}/>
-            <span className={"text-sm"}>Create New</span>
+            <span className={"text-xs md:text-sm"}>Create New</span>
         </button>
     )
 }
