@@ -5,7 +5,7 @@
 
 .teacher-cover {
     background: pink;
-    background: pink url("../img/t2.jpg");
+    background: pink url("../img/t2.jpeg");
     background-size: cover;
     background-position: 100% 10%;
     background-repeat: no-repeat !important;
