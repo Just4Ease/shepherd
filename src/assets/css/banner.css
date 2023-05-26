@@ -1,0 +1,11 @@
+.banner {
+    background: rgba(0, 0, 0, 0.4) url("../img/people-of-colors.jpg");
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: repeat-x !important;
+}
+
+.bg-filter {
+    background: rgba(0,0,0, 0.8);
+    background: linear-gradient(84deg, rgba(0,0,0,0.8982186624649859) 40%, rgba(157,157,157,0) 75%, rgba(0,0,0,0.7861738445378151) 87%);
+}

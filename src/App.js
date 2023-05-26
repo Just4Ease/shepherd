@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/main.css';
+import {Divider, Heading, NativeBaseProvider} from "native-base";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Filters from "./components/Filters";
+import LectureCard from "./components/Card";
+
+const Cards = [];
+for (let i = 0; i < 12; i++) {
+    // note: we are adding a key prop here to allow react to uniquely identify each
+    // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
+    Cards.push(<LectureCard key={i}/>);
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <NativeBaseProvider>
+            <div className={"px-5"}>
+                <Header/>
+                <div className={"top-24 absolute left-0 right-0 px-5"}>
+                    <hr/>
+                    <Banner/>
+                    <Divider/>
+                    <Filters/>
+                    <div className={"items-start justify-start absolute"}>
+                        <Heading>304 Tutors Available</Heading>
+                        <div className={"flex flex-row flex-wrap"}>
+                            {Cards}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </NativeBaseProvider>
+    );
 }
 
 export default App;

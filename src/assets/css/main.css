@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
+
+.teacher-cover {
+    background: pink;
+    background: pink url("../img/t2.jpg");
+    background-size: cover;
+    background-position: 100% 10%;
+    background-repeat: no-repeat !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.profile-img {
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    margin-top: -5px;
+}
